@@ -97,13 +97,15 @@ export const NewProject = ({ editData, formTitile = "Create New Project" }) => {
 						<option value="low">Low</option>
 					</select>
 				</div>
-				<div className="row">
-					<label htmlFor="">Choose Status</label>
-					<select name="status" id="" value={data?.status} onChange={handleChange}>
-						<option value="complete">Complete</option>
-						<option value="pending">Pending</option>
-					</select>
-				</div>
+				{editData && (
+					<div className="row">
+						<label htmlFor="">Choose Status</label>
+						<select name="status" id="" value={data?.status} onChange={handleChange}>
+							<option value="complete">Complete</option>
+							<option value="pending">Pending</option>
+						</select>
+					</div>
+				)}
 				<div className="btn-container">
 					<button className="cancel" onClick={toggleProjectForm}>
 						Cancel

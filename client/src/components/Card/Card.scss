@@ -1,23 +1,24 @@
 .card-container {
-	max-width: 300px;
+	flex: 1;
+	max-width: 400px;
+	min-width: 300px;
 	min-height: 160px;
 	color: #bcc0c6;
 	background-color: #2d2d2d;
-	box-shadow: 7px 8px 5px 0px rgba(248, 248, 248, 0.096);
+	box-shadow: 7px 8px 10px 0px rgba(248, 248, 248, 0.096);
 	border-radius: 10px;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 20px 10px;
-	min-width: 300px;
 
 	&:hover {
 		cursor: pointer;
 	}
 
 	h3 {
-		margin-bottom: 25px ;
+		margin-bottom: 25px;
 	}
 	h5 {
 		max-height: 5ch;
@@ -26,7 +27,7 @@
 
 	.row {
 		margin-top: 20px;
-		display: flex;	
+		display: flex;
 		justify-content: space-between;
 		p {
 			span {
@@ -44,5 +45,17 @@
 			border-radius: 5px;
 			// margin-left: 70%;
 		}
+	}
+}
+
+//============ breakpoint 1 =====================
+@media only screen and (max-width: 960px) {
+}
+
+//============ breakpoint 2 =====================
+@media only screen and (max-width: 625px) {
+	.card-container {
+		max-width: 100%;
+		box-shadow: none;
 	}
 }

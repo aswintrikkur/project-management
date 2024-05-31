@@ -3,11 +3,11 @@
 	// gap: 15px;
 	background-color: #1f1f1f;
 	color: #bcc0c6;
+	min-height: 100vh;
 
 	.main-content {
 		width: 100%;
-        position: relative;
-
+		position: relative;
 
 		.header {
 			min-height: 100px;
@@ -54,14 +54,33 @@
 			}
 		}
 		.project-container {
-            display: flex;
-            // justify-content: center;
-            padding: 20px 30px;
-            text-align: start;
-            gap: 30px 20px;
-            flex-wrap: wrap;
+			display: flex;
+			// justify-content: center;
+			padding: 20px 30px;
+			text-align: start;
+			gap: 30px 20px;
+			flex-wrap: wrap;
 
-            position: relative;
+			position: relative;
+		}
+	}
+}
+
+//============ breakpoint 1 =====================
+@media only screen and (max-width: 960px) {
+	.home-container {
+	}
+}
+
+//============ breakpoint 2 =====================
+@media only screen and (max-width: 625px) {
+	.home-container {
+		.main-content {
+			.header {
+				h2 {
+					display: none;
+				}
+			}
 		}
 	}
 }
