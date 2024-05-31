@@ -1,0 +1,49 @@
+@import url("./variable.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: system-ui;
+}
+
+.close-btn {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	color: #bcc0c6;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	font-weight: 600;
+	 /* color: rgb(224, 62, 62); */
+	background-color: #2d2d2d;
+}
+
+.cancel,
+.save,.edit,.delete {
+	align-items: flex-start;
+	background-color: #363637;
+	border-color: #363637;
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: #0000 0px 0px 0px 0px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 21px;
+	margin: 4px;
+	padding: 9px 28px;
+	text-align: center;
+}
+.save,.edit {
+	background-color: #00bac7;
+}
+.delete{
+    background-color: rgba(139, 0, 0, 0.712) ;
+}
+button:hover{
+    cursor: pointer;
+    scale: .98;
+}

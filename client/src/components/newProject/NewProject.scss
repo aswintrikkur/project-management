@@ -1,0 +1,65 @@
+.new-project-container {
+	position: absolute;
+    left: 25%;
+    top: -50%;
+    box-shadow: 0  0 1000px 10px black;
+    
+	min-width: 50%;
+	// min-height: 80vh;
+	padding: 20px 50px;
+	border-radius: 20px;
+
+	background-color: #2d2d2d;
+	color: #bcc0c6;
+	z-index: 10;
+
+	label {
+		color: #bcc0c6;
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 18px;
+		margin: 0px 0px 5px 10px;
+	}
+	input,
+	textarea,
+	select {
+		background-color: #252626;
+		border-color: #1e1e1e;
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 1px;
+		box-shadow: #0000 0px 0px 0px 0px;
+		color: #bcc0c6;
+		font-size: 12px;
+		line-height: 18px;
+		padding: 10px 12px;
+	}
+	textarea {
+		min-height: 120px;
+		color: #bcc0c675;
+	}
+	select {
+		color: #bcc0c675;
+	}
+
+	h2 {
+		margin: 30px 0;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+		margin: 20px 0;
+	}
+	.task {
+	}
+
+	.btn-container {
+        margin-top: 40px ;
+        margin-bottom: 10px;
+        text-align: center;
+
+
+	}
+}

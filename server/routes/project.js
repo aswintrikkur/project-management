@@ -1,9 +1,6 @@
 const express = require('express');
 const { Project } = require('../model/projectModel');
-// const { v4: uuidv4 } = require('uuid');
-// const { handleErrorMessage } = require('../util');
 const router = express.Router();
-// const Todo = require('../models/todoModel')
 
 
 
@@ -40,9 +37,9 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
 
     try {
-        const { projectName, description, task, status } = req.body;
+        const { projectName, description, task, status, priority } = req.body;
 
-        const response = await Project.create({ projectName, description, task, status });
+        const response = await Project.create({ projectName, description, task, status, priority });
         res.json(response)
     } catch (error) {
         res.status(400).json({ message: error })
@@ -53,8 +50,8 @@ router.post('/', async (req, res) => {
 // -------------- update existing project ------------
 router.put('/', async (req, res) => {
     try {
-        const { _id, projectName, description, task, status } = req.body;
-        const response = await Project.findByIdAndUpdate(_id, { projectName, description, task, status },
+        const { _id, projectName, description, task, status, priority } = req.body;
+        const response = await Project.findByIdAndUpdate(_id, { projectName, description, task, status, priority },
             { new: true }
         );
         res.json(response);

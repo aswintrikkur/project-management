@@ -9,13 +9,18 @@ const projectSchema = new mongoose.Schema(     // schema will check when we add 
         description: String,
         task: {
             // type: [String],
-            default:undefined,
-            type:Array
+            default: undefined,
+            type: Array
 
         },
         status: {
             type: String,
-            enum: ['complete','pending']
+            enum: ['complete', 'pending'],
+            default: 'pending'
+        },
+        priority: {
+            type: String,
+            enum: ['high', 'medium', 'low']
         }
         // isComplete: {
         //     type: Boolean,
