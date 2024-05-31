@@ -81,7 +81,7 @@ export const TaskDetails = ({}) => {
 						<p className="status">
 							Status :{" "}
 							<span > {data?.status} </span>
-						</p>
+													</p>
 
 						<div className="btn-container">
 							<button className="edit" onClick={handleEditProject}>

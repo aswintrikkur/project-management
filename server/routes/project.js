@@ -1,5 +1,8 @@
 const express = require('express');
 const { Project } = require('../model/projectModel');
+const { checkAuth } = require('../middleware/checkAuth');
+const { Users } = require('../model/userModel');
+const { generatePasswordHash } = require('../utils/bcrypt');
 const router = express.Router();
 
 
